@@ -1,0 +1,28 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.b {
+  position: fixed;
+  top: 75vh;
+  left: 85vw;
+  z-index: 999;
+  -webkit-transform: translate(0, 0); /* Fix for older Safari */
+  transform: translate(0, 0);
+}
+
+.border {
+  background-color: #ffffff;
+  height: 0.5px;
+  margin: 5rem;
+}
+
+@media (max-width: 768px) {
+  .b {
+    left: 69vw;
+    top: 75vh;
+  }
+}

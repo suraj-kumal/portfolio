@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "freight neo pro";
+  src: url("./components/css/freight-neo-pro-book.otf") format("opentype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: "freight neo pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* For older browsers that don't support vh units */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .b {
+    position: fixed;
+    top: 75%;
+    left: 85%;
+  }
+
+  @media (max-width: 768px) {
+    .b {
+      left: 69%;
+      top: 75%;
+    }
+  }
+}

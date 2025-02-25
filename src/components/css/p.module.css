@@ -1,0 +1,23 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.p_title {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .main {
+    height: auto;
+    min-height: -webkit-fill-available; /* for iOS Safari */
+    height: -moz-available; /* for Firefox */
+    height: fill-available; /* standard */
+  }
+}
